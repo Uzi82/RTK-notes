@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow-x: hidden;
+}
+
+input {
+    outline: none;
+}
+
+@import './addNote';
+@import './note';
+
+
+@import './adaptive';

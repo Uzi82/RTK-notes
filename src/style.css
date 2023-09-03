@@ -1,0 +1,156 @@
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow-x: hidden;
+}
+
+input {
+  outline: none;
+}
+
+.CreateNote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  background-color: #19191E;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  gap: 10px;
+}
+.CreateNote__header {
+  padding-left: 20px;
+  font-family: Montserrat-Bold, sans-serif;
+}
+.CreateNote__input {
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #1E1E28;
+  border: none;
+  width: 90%;
+  resize: none;
+  word-break: break-all;
+  padding: 10px 20px;
+  font-size: 28px;
+  color: white;
+  font-family: Montserrat-Regular, sans-serif;
+}
+.CreateNote__submit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 20px;
+  color: white;
+  background-color: #1E1E28;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  margin-left: auto;
+}
+.CreateNote__submit:hover {
+  background-color: white;
+  color: #1E1E28;
+}
+
+.Notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.Note {
+  width: 600px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #19191E;
+  -webkit-animation-name: appearNote;
+          animation-name: appearNote;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Note__title {
+  font-size: 24px;
+  word-break: break-all;
+  font-family: Montserrat-Regular, sans-serif;
+}
+.Note__delete {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 20px;
+  color: white;
+  background-color: #1E1E28;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  margin: 0 20px 0 auto;
+}
+.Note__delete:hover {
+  background-color: white;
+  color: #1E1E28;
+}
+
+@-webkit-keyframes appearNote {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appearNote {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .CreateNote {
+    width: 300px;
+  }
+  .CreateNote__input {
+    width: 85%;
+  }
+  .Note {
+    width: 300px;
+  }
+}

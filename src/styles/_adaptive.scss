@@ -1,0 +1,11 @@
+@media screen and (max-width: 767px) {
+    .CreateNote {
+        width: 300px;
+        &__input {
+            width: 85%;
+        }
+    }
+    .Note {
+        width: 300px;
+    }
+}

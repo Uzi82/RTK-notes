@@ -1,0 +1,43 @@
+.CreateNote {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #19191E;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    gap: 10px;
+    &__header {
+        padding-left: 20px;
+        font-family: Montserrat-Bold, sans-serif;
+    }
+    &__input {
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: #1E1E28;
+        border: none;
+        width: 90%;
+        resize: none;
+        word-break: break-all;
+        padding: 10px 20px;
+        font-size: 28px;
+        color: white;
+        font-family: Montserrat-Regular, sans-serif;
+    }
+    &__submit {
+        width: fit-content;
+        padding: 5px 20px;
+        color: white;
+        background-color: #1E1E28;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 300ms;
+        &:hover {
+            background-color: white;
+            color: #1E1E28;
+        }
+        margin-left: auto;
+    }
+}

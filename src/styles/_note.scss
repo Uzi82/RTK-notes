@@ -1,0 +1,47 @@
+.Notes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Note {
+    width: 600px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #19191E;
+    animation-name: appearNote;
+    animation-duration: 300ms;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    &__title {
+        font-size: 24px;
+        word-break: break-all;
+        font-family: Montserrat-Regular, sans-serif;
+    }
+    &__delete {
+        width: fit-content;
+        padding: 5px 20px;
+        color: white;
+        background-color: #1E1E28;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 300ms;
+        margin: 0 20px 0 auto;
+        &:hover {
+            background-color: white;
+            color: #1E1E28;
+        }
+    }
+}
+
+@keyframes appearNote {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
